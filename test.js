@@ -8,5 +8,5 @@ var functions = require('./functions');
 // console.log(functions.factors(500));
 // console.log(functions.cipher('hello world', 1));
 // console.log(functions.leetspeak('apples'));
-console.log(functions.sumNumbers([1,2,3,4]));
-console.log(functions.positiveNumbers([1,-2,5,-3]));
+// console.log(functions.sumNumbers([1,2,3,4]));
+// console.log(functions.positiveNumbers([1,-2,5,-3]));
