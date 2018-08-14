@@ -8,6 +8,9 @@ var http = require('http');
 // dns module
 var dns = require('dns');
 
+// promisify
+var promisify = require('util').promisify;
+
 var rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
@@ -41,23 +44,18 @@ var rl = readline.createInterface({
 //     getIPaddress(name);
 // });
 
+// var readFile = promisify(fs.readFile);
+// var writeFile = promisify(fs.watchFile);
+
 // rl.question('Input file? ', function(input) {
 //     rl.question('output file? ', function(output) {
-//         fs.readFile(input, function(err, line) {
-//             if (err) {
-//                 return err;
-//             } else {
-//                 var uppercaseLine = line.toString().toUpperCase();
-//                 fs.writeFile(output, uppercaseLine, function(err) {
-//                     if (err) {
-//                         return err;
-//                     } else {
-//                         console.log('written correctly!');
-//                     }
-//                 });
-//             }
-//         });
 //         rl.close();
+//         readFile(input, 'utf8').then(function(line) {
+//             var uppercaseLine = line.toString().toUpperCase();
+//             writeFile(output, uppercaseLine).then(function() {
+//                 console.log('written correctly!');
+//             });
+//         });
 //     });
 // });
 
